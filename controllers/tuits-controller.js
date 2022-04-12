@@ -21,6 +21,7 @@ const createTuit = async (req, res) => {
 
 const deleteTuit = async (req, res) => {
     const tuitdIdToDelete = req.params['uid'];
+    console.log(tuitdIdToDelete);
     const status = await tuitsDao.deleteTuit(tuitdIdToDelete);
     res.sendStatus(status);
 }
