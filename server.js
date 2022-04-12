@@ -9,6 +9,7 @@ mongoose.connect("mongodb+srv://adiotte:WebDev@cluster0.jayxo.mongodb.net/myFirs
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 helloController(app);
 welcomeController(app);
 app.use(express.json());
