@@ -1,6 +1,12 @@
 import posts from "./tuits.js";
 import tuitsDao from "./tuits-dao.js";
 
+const tuitsController = (app) => {
+    app.post('/api/tuits', createTuit);
+    app.get('/api/tuits', findAllTuits);
+    app.put('/api/tuits/:tid', updateTuit);
+    app.delete('/api/tuits/:tid', deleteTuit);
+}
 
 const findAllTuits = async (req, res) => {
     const tuits = await tuitsDao.findAllTuits()
