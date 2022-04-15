@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 const schema = mongoose.Schema({
+    logoImage: String,
     tuit: String,
     handle: String,
     liked: Boolean,
