@@ -13,6 +13,7 @@ const schema = mongoose.Schema({
     },
     stats: {
         comments: Number
+        retuits: Number,
     }
 }, {collection: 'tuits'});
 export default schema;
