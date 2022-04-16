@@ -12,8 +12,8 @@ const schema = mongoose.Schema({
         username: String
     },
     stats: {
-        comments: Number
-        retuits: Number,
+        comments: Number,
+        retuits: Number
     }
 }, {collection: 'tuits'});
 export default schema;
