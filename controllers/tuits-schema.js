@@ -10,9 +10,9 @@ const schema = mongoose.Schema({
     comments: Number,
     postedBy: {
         username: String
-    }
+    },
     stats: {
-        comments: Number;
+        comments: Number
     }
 }, {collection: 'tuits'});
 export default schema;
